@@ -1,0 +1,28 @@
+# 1. Virtual Environment (Crucial)
+# ------------------------------
+venv/
+env/
+.env/
+__pycache__/
+*.pyc
+
+# 2. Local Data (Large Files)
+# ------------------------------
+# We ignore the raw data files since they are too large for Git
+data/raw/*.csv
+data/processed/
+
+# 3. Model Artifacts (Trained Weights)
+# ------------------------------
+# .pkl files are binary and large; we don't track them
+models/*.pkl
+
+# 4. OS Specific Files
+# ------------------------------
+.DS_Store
+Thumbs.db
+
+# 5. IDE Specific Folders
+# ------------------------------
+.vscode/
+.idea/
