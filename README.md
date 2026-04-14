@@ -2,6 +2,8 @@
 
 A hybrid recommendation system built to simulate how content platforms personalize what users see. The focus here is less about the model itself and more about building a proper end-to-end ML system — training pipeline, inference, API serving, and a frontend all working together.
 
+The system is fully functional locally and designed to be extended into a production-ready pipeline.
+
 ---
 
 ## Why I built this
@@ -76,11 +78,11 @@ Then open the Streamlit app, enter a user ID, and get recommendations.
 
 - [x] System architecture designed and implemented
 - [x] Hybrid recommendation logic working
+- [x] Model trained on interaction data
 - [x] FastAPI backend serving predictions
 - [x] Streamlit frontend connected to the API
-- [ ] Model training on real dataset (in progress)
-- [ ] Evaluation metrics (precision@k, recall@k)
-- [ ] Deployment
+- [ ] Deployment to cloud environment
+- [ ] Production monitoring and logging
 
 ---
 
@@ -99,13 +101,14 @@ This is closer to how recommendation systems work in practice, where the enginee
 
 ## Next steps
 
-- Train on the MovieLens dataset and evaluate properly
-- Add a content-based score that actually uses TF-IDF or embeddings instead of the placeholder
-- Log recommendation quality metrics
-- Deploy the API somewhere accessible
+- Deploy the API and frontend to a cloud environment
+- Add logging for user interactions and recommendation performance
+- Track metrics like click-through rate and engagement
+- Improve ranking with richer content features (e.g., embeddings)
+- Optimize inference latency and scalability
 
 ---
 
 ## A note
 
-This is a learning project. The dataset is MovieLens mapped to a "stories" domain as a proxy. The architecture reflects how I'd approach this problem in a real system, even if the data and scale are simplified.
+This project focuses on understanding and building a complete recommendation pipeline end-to-end. The dataset is MovieLens mapped to a "stories" domain as a proxy. The architecture reflects how I'd approach this problem in a real system, even if the data and scale are simplified.
